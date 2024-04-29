@@ -1,0 +1,27 @@
+{
+    "targets": [
+        "swap"
+    ],
+    "passes": [
+        {
+            "name": "zoom",
+            "intarget": "minecraft:main",
+            "outtarget": "swap"
+        },
+        {
+            "name": "bits",
+            "intarget": "swap",
+            "outtarget": "minecraft:main",
+            "uniforms": [
+                {
+                    "name": "Resolution",
+                    "values": [ 16.0 ]
+                },
+                {
+                    "name": "MosaicSize",
+                    "values": [ 4.0 ]
+                }
+            ]
+        }
+    ]
+}
